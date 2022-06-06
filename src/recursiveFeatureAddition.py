@@ -21,11 +21,14 @@ from sklearn.base import BaseEstimator
 from sklearn.base import MetaEstimatorMixin
 from sklearn.base import clone
 from sklearn.base import is_classifier
-from sklearn.externals.joblib import Parallel, delayed
+#from sklearn.externals.joblib import Parallel, delayed
+from joblib import Parallel, delayed
 from sklearn.model_selection import check_cv
 from sklearn.model_selection._validation import _safe_split, _score
-from sklearn.metrics.scorer import check_scoring
-from sklearn.feature_selection.base import SelectorMixin
+#from sklearn.metrics.scorer import check_scoring
+from sklearn.metrics import check_scoring
+#from sklearn.feature_selection.base import SelectorMixin
+from sklearn.feature_selection import SelectorMixin
 
 
 def _rfa_single_fit(rfa, estimator, X, y, train, test, scorer):

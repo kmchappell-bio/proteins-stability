@@ -28,7 +28,7 @@ from sklearn.metrics import (cohen_kappa_score, f1_score, make_scorer,
 from sklearn.model_selection import (GridSearchCV, StratifiedKFold,
                                      cross_val_score, train_test_split)
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.neighbors.nearest_centroid import NearestCentroid
+from sklearn.neighbors import NearestCentroid
 from sklearn.pipeline import Pipeline, make_pipeline
 from sklearn.preprocessing import StandardScaler, label_binarize, MinMaxScaler
 from sklearn.svm import LinearSVC
